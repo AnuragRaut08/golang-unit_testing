@@ -2,17 +2,12 @@ package unit_test
 
 import "testing"
 
-func TestExample(t *testing.T) {
-    // Example test logic
-    result := sampleFunction(5) // Call the function 
-    expected := 10
+func TestCheckDivisibility(t *testing.T) {
+    input := -5
+    want := "FIVE"
+    got := CheckDivisibility(input)
 
-    if result != expected {
-        t.Errorf("Expected %d, got %d", expected, result)
+    if want != got {
+        t.Errorf("Incorrect Response: got %s, want %s", got, want)
     }
-}
-
-// Sample function for demonstration
-func sampleFunction(input int) int {
-    return input * 2
 }
