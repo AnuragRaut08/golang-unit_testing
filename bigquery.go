@@ -19,6 +19,7 @@ func NewClient(config *Config) (*Client, error) {
 		return nil, fmt.Errorf("Error: Failed to create BigQuery client: %v", err)
 	}
 	return &Client{Conn: client}, nil
+	
 }
 
 
