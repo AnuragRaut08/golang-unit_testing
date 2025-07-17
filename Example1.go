@@ -6,4 +6,5 @@ func CheckDivisibility(input int) string {
         return "FIVE"
     }
     return "NOT FIVE"
+    
 }
