@@ -9,5 +9,6 @@ func TestCheckDivisibility(t *testing.T) {
 
     if want != got {
         t.Errorf("Incorrect Response: got %s, want %s", got, want)
+        
     }
 }
